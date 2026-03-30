@@ -8,36 +8,21 @@
 
 <body>
 
-    <div class="container">
+<div class="start-box">
 
-        <h1>Quiz App</h1>
+    <h1>🚀 Quiz App</h1>
 
-        <!-- LEVEL SELECT -->
-        <div id="level-box">
-            <h3>Select Level</h3>
+    <input type="text" id="username" placeholder="Enter your name">
 
-            <button onclick="startQuiz('easy')">Easy</button>
-            <button onclick="startQuiz('medium')">Medium</button>
-            <button onclick="startQuiz('hard')">Hard</button>
-        </div>
-
-        <!-- QUIZ BOX -->
-        <div id="quiz-box" style="display: none;">
-
-            <h2 id="question">Question</h2>
-
-            <div id="options"></div>
-
-            <button onclick="nextQuestion()">Next</button>
-
-            <p id="score"></p>
-
-        </div>
-
+    <div class="levels">
+        <button onclick="startQuiz('easy')">Easy</button>
+        <button onclick="startQuiz('medium')">Medium</button>
+        <button onclick="startQuiz('hard')">Hard</button>
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
