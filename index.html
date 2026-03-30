@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Quiz App</h1>
+
+        <!-- LEVEL SELECT -->
+        <div id="level-box">
+            <h3>Select Level</h3>
+
+            <button onclick="startQuiz('easy')">Easy</button>
+            <button onclick="startQuiz('medium')">Medium</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+        </div>
+
+        <!-- QUIZ BOX -->
+        <div id="quiz-box" style="display: none;">
+
+            <h2 id="question">Question</h2>
+
+            <div id="options"></div>
+
+            <button onclick="nextQuestion()">Next</button>
+
+            <p id="score"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
